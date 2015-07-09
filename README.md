@@ -3,7 +3,10 @@ A quick git reference
 
 ## Getting started
 
-| Command | Description |
-|-|-|
-| init | Start tracking current directory. Creates necessary `.git` files |
+| Command     | Options     | Description                                                      |
+|-------------|-------------|---------------------------------------------------------|
+| init        |             | Start tracking current directory. Creates `.git` files |
+| commit      | -a, --all   | Stage modified and deleted files. Doesn't include new files |
+
+
 
