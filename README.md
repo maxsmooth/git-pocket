@@ -16,6 +16,6 @@
 | git branch        |  | List branches |
 | git branch        | *branchname* | Create new branch |
 | git checkout      | *branchname* | Switch to branch |
-| git merge         | *branchname* | Merge changes from branche to current tree |
+| git merge         | *branchname* | Merge changes from *branchname* to current tree |
 
 
