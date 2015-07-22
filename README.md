@@ -11,8 +11,8 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git clone       | *url*       | Clone a remote repository to local subdirectory |
-| git init        |             | Make current directory a git repository |
+| git clone       | *url*       | Clone a remote repository to current directory |
+| git init        |             | Make current directory a repository |
 
 ## File operations
 
