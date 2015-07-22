@@ -3,15 +3,23 @@
 
 ## Getting started
 
-| Command     | Options     | Description                                                      |
+| Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
+| git clone       | *URL*       | Clone a remote repository into a subdirectory |
 | git init        |             | Start tracking current directory with git |
-| git add         | .           | Add files to index, e.g current dir (includes new, modified, deleted)  |
-| git commit      | -m "*message*"   | Commit all (modified and deleted, except new) files with message  |
+
+## File operations
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| git add         | *path*           |  Add files to index, e.g current dir (includes new, modified, deleted)  |
+| git rm          | *path*           |  Remove file or directory from the working tree |
+|                 | -f               |  Force deletion of files from disk |
+| git commit      | -m "*message*"   |  Commit all (modified and deleted, except new) files with message |
 
 ## Branching
 
-| Command     | Options     | Description                                                      |
+| Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | git branch        |  | List branches |
 | git branch        | *branchname* | Create new branch |
