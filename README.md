@@ -1,6 +1,12 @@
 
 # A quick git reference (WIP)
 
+## Git workflow
+
+- **Working Directory**: current files
+- **Index**: staging area
+- **HEAD**: last commit you've made
+
 ## Getting started
 
 | Command     | Options     | Description |
