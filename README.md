@@ -5,8 +5,8 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git clone       | *URL*       | Clone a remote repository into a subdirectory |
-| git init        |             | Start tracking current directory with git |
+| git clone       | *URL*       | Clone a remote repository to local subdirectory |
+| git init        |             | Make current directory a git repository |
 
 ## File operations
 
