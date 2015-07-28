@@ -20,7 +20,7 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git add`         | `<path | file>`     |  Start tracking files (includes new, modified, deleted)  |
+| `git add`         | `<file> | <path>`     |  Start tracking files (includes new, modified, deleted)  |
 | `git commit`      | `-m "<title>" -m "<body>"` |  Commit with message (modified, deleted, except new) |
 | `git rm`          | `*path*`            |  Remove file or directory from the working tree |
 |                   | `-f`                |  Force deletion of files from disk |
