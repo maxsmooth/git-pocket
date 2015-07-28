@@ -37,8 +37,11 @@
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git tag`           |               | List available tags |
-| `git tag`           | `v1.0.0`        | Tag latest commit lightweight |
-| `git tag`           | `v1.0.0 -a -m "*message*"` | Tag latest commit with annotation |
+| `git tag`           | `v1.0.0`        | Create tag, latest commit, lightweight |
+| `git tag`           | `-a v1.0.0 -m "message"` | Create tag, latest commit, annotated |
+| `git tag`           | `-a v1.0.0 -m "message" <SHA-1>` | Create tag based from specific commit |
+| `git tag`           | `-d  v1.1.0` | Delete tag |
 | `git show`          | `v1.0.0`        | Show tag data and message |
+| `git checkout`      | `v1.0.0`        | Show tag data and message |
 
 
