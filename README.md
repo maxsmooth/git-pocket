@@ -27,10 +27,10 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git branch        |               | List branches |
-| git branch        | *branchname*  | Create new branch |
-| git checkout      | *branchname*  | Switch to branch |
-| git merge         | *branchname*  | Merge changes from *branchname* to current tree |
+| `git branch`        |               | List branches |
+| `git branch`        | `<branchname>`  | Create new branch |
+| `git checkout`      | `<object>`    | Switch to commit, branch, sha-1 |
+| `git merge`         | `<branchname>`  | Merge changes from `<branchname>` to current tree |
 
 ## Tagging
 
@@ -42,6 +42,6 @@
 | `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, from specific commit |
 | `git tag`           | `-d  <v1.1.0>` | Delete tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
-| `git checkout`      | `<v1.0.0>`        | Show tag data and message |
+| `git checkout`      | `<v1.0.0>`        | Switch to specific point tag |
 
 
