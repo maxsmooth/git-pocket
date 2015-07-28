@@ -36,9 +36,9 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git tag           |               | List available tags |
-| git tag v1.0.0    |               | Tag latest commit lightweight |
-| git tag v1.0.0    | -a -m "*message*" | Tag latest commit with annotation |
-| git show v1.0.0   |               | Show tag data and message |
+| `git tag`           |               | List available tags |
+| `git tag`           | `v1.0.0`        | Tag latest commit lightweight |
+| `git tag`           | `v1.0.0 -a -m "*message*"` | Tag latest commit with annotation |
+| `git show`          | `v1.0.0`        | Show tag data and message |
 
 
