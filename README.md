@@ -27,9 +27,18 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git branch        |  | List branches |
-| git branch        | *branchname* | Create new branch |
-| git checkout      | *branchname* | Switch to branch |
-| git merge         | *branchname* | Merge changes from *branchname* to current tree |
+| git branch        |               | List branches |
+| git branch        | *branchname*  | Create new branch |
+| git checkout      | *branchname*  | Switch to branch |
+| git merge         | *branchname*  | Merge changes from *branchname* to current tree |
+
+## Tagging
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| git tag           |               | List available tags |
+| git tag v1.0.0    |               | Tag latest commit lightweight |
+| git tag v1.0.0    | -a -m "*message*" | Tag latest commit with annotation |
+| git show v1.0.0   |               | Show tag data and message |
 
 
