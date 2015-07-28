@@ -4,8 +4,8 @@
 ## Git workflow
 
 - **Working Directory**: current files
-- **Index**: staging area
-- **HEAD**: last commit you've made
+- **Index**: staging area before recording
+- **HEAD**: last commit recorded
 
 ## Getting started
 
