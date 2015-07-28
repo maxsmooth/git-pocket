@@ -18,10 +18,10 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git add         | *path*           |  Add files to index, e.g current dir (includes new, modified, deleted)  |
-| git rm          | *path*           |  Remove file or directory from the working tree |
-|                 | -f               |  Force deletion of files from disk |
-| git commit      | -m "*message*"   |  Commit all (modified and deleted, except new) files with message |
+| `git add`         | `*path*`           |  Add files to index, e.g current dir (includes new, modified, deleted)  |
+| `git rm`          | `*path*`           |  Remove file or directory from the working tree |
+|                   | `-f`               |  Force deletion of files from disk |
+| `git commit`      | `-m "<msg title>" -m "<msg body>"` |  Commit with message (modified, deleted, except new) |
 
 ## Branching
 
