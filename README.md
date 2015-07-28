@@ -1,7 +1,7 @@
 
 # A quick git reference (WIP)
 
-## Git workflow
+## Context
 
 - **Working Directory**: current files
 - **Index**: staging area before recording
@@ -11,22 +11,19 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| git clone       | *url*       | Clone a remote repository to current directory |
-| git init        |             | Make current directory a repository |
+| `git init`  |             | Make current directory a repository |
+| `git clone` | `<url>`     | Clone remote repository into current directory |
 
 ## File operations
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git add`         | `*path*`           |  Add files to index, e.g current dir (includes new, modified, deleted)  |
-| `git rm`          | `*path*`           |  Remove file or directory from the working tree |
-|                   | `-f`               |  Force deletion of files from disk |
 
 ## Commiting and pushing
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
+| `git add`         | `<path | file>`     |  Start tracking files (includes new, modified, deleted)  |
 | `git commit`      | `-m "<title>" -m "<body>"` |  Commit with message (modified, deleted, except new) |
+| `git rm`          | `*path*`            |  Remove file or directory from the working tree |
+|                   | `-f`                |  Force deletion of files from disk |
 
 ## Branching
 
