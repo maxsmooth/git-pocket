@@ -23,8 +23,8 @@
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git add`         | `<file> | <path>`   |  Add files to staging area  |
-| `git commit`      | `-m "<title>" -m "<body>"` |  Commit with message (includes "added" files only) |
-| `git rm`          | `<path>`            |  Remove file or directory from the working tree |
+| `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
+| `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
 ## Branching
