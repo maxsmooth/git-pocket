@@ -26,9 +26,9 @@
 |-------------|-------------|---------------------------------------------------------|
 | `git diff`  |             | Compare **`working directory`** and **`index`** |
 |             | `–-cached`  | Compare **`index`** and **`latest commit`** |
-|             | `HEAD`      | Compare **`working directory`** and **`latest commit`** |
+|             | `HEAD`      | Compare **`latest commit`** and **`working directory`** |
 |             | `--stat`    | Optional summary format |
-|             | `<commit> <commit> | <branch> <branch>`  | Commits or blobs to compare |
+|             | `<commit> <commit> | <branch> <branch>`  | Objects to compare |
 |             | `<path> | <file>`    | Make output relative to `<path>` |
 
 #### Diff examples:
