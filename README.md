@@ -27,18 +27,18 @@
 | `git diff`  |             | Compare **`working directory`** and **`index`** |
 |             | `–-cached`  | Compare **`index`** and **`latest commit`** |
 |             | `HEAD`      | Compare **`latest commit`** and **`working directory`** |
-|             | `--stat`    | Optional summary format |
-|             | `<commit> <commit> | <branch> <branch>`  | Objects to compare |
-|             | `<path> | <file>`    | Make output relative to `<path>` |
+|             | `--stat`    | Optional short format |
+|             | `<commit> <commit> | <branch> <branch>` | 2 points in time to compare |
+|             | `<path> | <file>` | Make output relative to `<path>` or limit to `<file>` |
 
 #### Diff examples:
 
-```bash
+```shell
 ## compare changes made to README.md between working tree (default implied) and latest commit (HEAD)
-git diff HEAD --stat ./path/README.md
+$ git diff HEAD --stat ./path/README.md
 
 ## compare changes made to README.md between 2 specific commits
-git diff --stat a649900 24bdd58 ./path/README.md
+$ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
 ## Commiting and pushing
