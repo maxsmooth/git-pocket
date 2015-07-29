@@ -8,6 +8,8 @@
 | Working directory | Actual files and changes on current directory |
 | Index            \| Staging area | Snapshot of files and changes set aside to be commited |
 | HEAD              | Latest commit recorded in current branch  |
+| blog              |   |
+| SHA-1             |   |
 
 ## Getting started
 
@@ -34,10 +36,10 @@
 #### Diff examples:
 
 ```shell
-## compare changes made to README.md between working tree (default implied) and latest commit (HEAD)
+## compare changes made to README.md between working tree (implied default) and latest commit (HEAD)
 $ git diff HEAD --stat ./path/README.md
 
-## compare changes made to README.md between 2 specific commits
+## compare changes made to README.md between 2 points in time (e.g. 2 commits)
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
