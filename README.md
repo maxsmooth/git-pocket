@@ -45,6 +45,6 @@
 | `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, from specific commit |
 | `git tag`           | `-d  <v1.1.0>` | Delete tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
-| `git checkout`      | `<v1.0.0>`        | Switch to specific point tag |
+| `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
 
 
