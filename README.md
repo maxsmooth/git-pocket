@@ -1,7 +1,7 @@
 
 # A quick git reference (WIP)
 
-## Context
+## Git context
 
 | Stage | Description |
 |-------|-------------|
@@ -15,6 +15,7 @@
 |-------------|-------------|---------------------------------------------------------|
 | `git init`  |             | Make current directory a git repository |
 | `git clone` | `<giturl>`     | Clone remote repository into current directory |
+| `git status`| `-s` | Show the working tree status in `--short` format |
 | `git ls-files`|  | Show information about files in the index and the working tree |
 
 ## Commiting and pushing
