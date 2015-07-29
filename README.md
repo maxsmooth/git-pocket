@@ -1,13 +1,13 @@
 
-# A quick git reference (WIP)
+# A quick Git reference (WIP)
 
 ## Git context
 
 | Stage | Description |
 |-------|-------------|
 | Working directory | Actual files/changes on current directory |
-| Index \| Staging area | Snapshot of files/changes set aside to be commited |
-| HEAD  | Latest commit recorded in current branch  |
+| Index            \| Staging area | Snapshot of files/changes set aside to be commited |
+| HEAD              | Latest commit recorded in current branch  |
 
 ## Getting started
 
@@ -17,7 +17,30 @@
 | `git clone` | `<giturl>`  | Clone remote repository into current directory |
 | `git checkout`| `<object>`| Switch to commit, branch, or SHA-1 |
 | `git status`| `-s`        | Show the working tree status, optional `--short` format |
+| `git log`   | `--oneline` | Show commit logs, optional `--oneline` |
 | `git ls-files`|           | Show information about files in the index and the working tree |
+
+## Diff
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git diff`  |             | Compare **`working directory`** and **`index`** |
+|             | `–-cached`  | Compare **`index`** and **`latest commit`** |
+|             | `HEAD`      | Compare **`working directory`** and **`latest commit`** |
+| *** | *** | *** |
+|             | `--stat`    | Optional summary format |
+|             | `<commit> <commit> | <branch> <branch>`  | Commits or blobs to compare |
+|             | `<path> | <file>`    | Make output relative to `<path>` |
+
+#### Diff examples:
+
+```bash
+## compare changes made to README.md between working tree (default implied) and latest commit (HEAD)
+git diff HEAD --stat ./path/README.md
+
+## compare changes made to README.md between 2 specific commits
+git diff --stat a649900 24bdd58 ./path/README.md
+```
 
 ## Commiting and pushing
 
