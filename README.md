@@ -5,18 +5,18 @@
 
 | Stage | Description |
 |-------|-------------|
-| Working directory | Actual files on current folder |
-| Index | Staging area, snapshot of files set aside to be commited |
-| HEAD  | Last commit recorded in current branch  |
+| Working directory | Actual files/changes on current directory |
+| Index \| Staging area | Snapshot of files/changes set aside to be commited |
+| HEAD  | Latest commit recorded in current branch  |
 
 ## Getting started
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git init`  |             | Make current directory a git repository |
-| `git clone` | `<giturl>`     | Clone remote repository into current directory |
-| `git status`| `-s` | Show the working tree status in `--short` format |
-| `git ls-files`|  | Show information about files in the index and the working tree |
+| `git clone` | `<giturl>`  | Clone remote repository into current directory |
+| `git status`| `-s`        | Show the working tree status, optional `--short` format |
+| `git ls-files`|           | Show information about files in the index and the working tree |
 
 ## Commiting and pushing
 
