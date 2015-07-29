@@ -5,8 +5,8 @@
 
 | Stage | Description |
 |-------|-------------|
-| Working directory | Actual files/changes on current directory |
-| Index            \| Staging area | Snapshot of files/changes set aside to be commited |
+| Working directory | Actual files and changes on current directory |
+| Index            \| Staging area | Snapshot of files and changes set aside to be commited |
 | HEAD              | Latest commit recorded in current branch  |
 
 ## Getting started
