@@ -14,7 +14,7 @@
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git init`  |             | Make current directory a git repository |
-| `git clone` | `<giturlL>`     | Clone remote repository into current directory |
+| `git clone` | `<giturl>`     | Clone remote repository into current directory |
 | `git ls-files`|  | Show information about files in the index and the working tree |
 
 ## Commiting and pushing
