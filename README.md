@@ -1,5 +1,5 @@
 
-# A quick Git reference (WIP)
+# A quick Git reference
 
 ## Git context
 
@@ -15,12 +15,12 @@
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git init`  |             | Make current directory a git repository |
-| `git clone` | `<giturl>`  | Clone remote repository into current directory |
-| `git checkout`| `<object>`| Switch to commit, branch, or SHA-1 |
-| `git status`| `-s`        | Show the working tree status, optional `--short` format |
-| `git log`   | `--oneline` | Show commit logs, optional `--oneline` |
-| `git ls-files`|           | Show information about files in the index and the working tree |
+| `git init`    |             | Make current directory a git repository |
+| `git clone`   | `<giturl>`  | Clone remote repository into current directory |
+| `git checkout`| `<object>`  | Switch to commit, branch, or SHA-1 |
+| `git status`  | `-s`        | Show the working tree status, with `--short` format |
+| `git log`     | `--oneline` | Show commit logs, with `--oneline` format |
+| `git ls-files`|             | Show information about files in the index and the working tree |
 
 ## Diff
 
@@ -43,7 +43,7 @@ $ git diff HEAD --stat ./path/README.md
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
-## Commiting
+## Commit
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -52,7 +52,7 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
-## Pushing
+## Push
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -60,7 +60,7 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git push`         | `origin <tagname>`     |  Push tag  |
 | `git push`         | `origin --tags`        |  Push all tags  |
 
-## Branching
+## Branch
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -70,15 +70,15 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git branch`        | `-d <branchname>` | `--delete` branch |
 | `git push`          | `--d origin <branchname>` | `--delete` remote branch |
 
-## Tagging
+## Tag
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git tag`           |                   | List available tags |
 | `git tag`           | `<v1.0.0>`        | Create tag, from latest commit, lightweight |
-| `git tag`           | `-a <v1.0.0> -m "<msg>"` | Create tag, from latest commit, annotated |
-| `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, from specific commit |
-| `git tag`           | `-d  <v1.1.0>`    | Delete tag |
+| `git tag`           | `-a <v1.0.0> -m "<msg>"` | Create tag, with `--annotate`, from latest commit |
+| `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, with `--annotate`, from specific commit |
+| `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
 
