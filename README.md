@@ -43,7 +43,7 @@ $ git diff HEAD --stat ./path/README.md
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
-## Commiting and pushing
+## Commiting
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -51,6 +51,14 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
+
+## Pushing
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git push`         | `origin <branchname>`  |  Push branch to remote server  |
+| `git push`         | `origin <tagname>`     |  Push tag  |
+| `git push`         | `origin --tags`        |  Push all tags  |
 
 ## Branching
 
@@ -60,6 +68,7 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git branch`        | `<branchname>`    | Create new branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current tree |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
+| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
 
 ## Tagging
 
