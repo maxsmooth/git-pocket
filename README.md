@@ -1,6 +1,10 @@
 
 # A quick Git reference
 
+## Setup Git
+
+Set Up Git: https://help.github.com/articles/set-up-git/
+
 ## Git context
 
 | Stage | Description |
