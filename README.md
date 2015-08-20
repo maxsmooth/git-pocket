@@ -42,8 +42,8 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 |             | `–-cached`  | Compare **`index`** and **`latest commit`** |
 |             | `HEAD`      | Compare **`latest commit`** and **`working directory`** |
 |             | `--stat`    | Optional short format |
-|             | `<commit> <commit> | <branch> <branch>` | 2 points in time to compare |
-|             | `<path> | <file>` | Make output relative to `<path>` or limit to `<file>` |
+|             | `<sha-1> <sha-1>` | 2 points in time to compare |
+|             | `<dir> | <file>` | Compare whole directory or limit to file |
 
 #### Diff examples:
 
@@ -51,7 +51,7 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 ## compare changes made to README.md between working tree (default) and latest commit (HEAD)
 $ git diff --stat HEAD ./path/README.md
 
-## compare changes made to README.md between 2 points in time (e.g. 2 commits)
+## compare changes made to README.md between 2 specific points in time (e.g. 2 commits)
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
