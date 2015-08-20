@@ -12,8 +12,12 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 | Working directory | Actual files and changes on current directory |
 | Index            \| Staging area | Snapshot of files and changes set aside to be commited |
 | HEAD              | Latest commit recorded in current branch  |
-| blog              |   |
-| SHA-1             |   |
+| SHA-1             | Unique identifier assigned to obects as recorded in points in time |
+| blob              | Represents a file  |
+| tree              | Represents a directory of files |
+| Commit            | Represents a tree as recorded in a point in time  |
+| Tag               | Representa a recorded commit with optional annotation |
+
 
 ## Getting started
 
@@ -22,6 +26,10 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 | `git init`    |             | Make current directory a git repository |
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
 | `git checkout`| `<object>`  | Switch to commit, branch, or SHA-1 |
+| `git submodule` | `update --remote` | Pull submodules from remote repo |
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
 | `git status`  | `-s`        | Show the working tree status, with `--short` format |
 | `git log`     | `--oneline` | Show commit logs, with `--oneline` format |
 | `git ls-files`|             | Show information about files in the index and the working tree |
