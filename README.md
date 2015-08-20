@@ -48,8 +48,8 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 #### Diff examples:
 
 ```shell
-## compare changes made to README.md between working tree (implied default) and latest commit (HEAD)
-$ git diff HEAD --stat ./path/README.md
+## compare changes made to README.md between working tree (default) and latest commit (HEAD)
+$ git diff --stat HEAD ./path/README.md
 
 ## compare changes made to README.md between 2 points in time (e.g. 2 commits)
 $ git diff --stat a649900 24bdd58 ./path/README.md
