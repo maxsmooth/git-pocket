@@ -5,12 +5,12 @@
 
 Set Up Git: https://help.github.com/articles/set-up-git/
 
-## Git context
+## Git gibberish 
 
-| Stage | Description |
+| Keyword | Description |
 |-------|-------------|
 | `Working directory` | Actual files and on-going changes on current directory |
-| `Index` \| `Staging area` | Snapshot of files and changes set aside to be commited |
+| `Index` \| `Staging area` | Snapshot changes set aside to be commited |
 | `SHA-1`             | Unique identifier repesenting history and information |
 | `blob`              | Represents a file  |
 | `tree`              | Represents a directory of files |
