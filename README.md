@@ -9,14 +9,14 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 
 | Stage | Description |
 |-------|-------------|
-| Working directory | Actual files and changes on current directory |
-| Index            \| Staging area | Snapshot of files and changes set aside to be commited |
-| HEAD              | Latest commit recorded in current branch  |
-| blob              | Represents a file  |
-| tree              | Represents a directory of files |
-| Commit            | Represents a tree as recorded in a point in time  |
-| Tag               | Representa a recorded commit with optional annotation |
-| SHA-1             | Unique identifier repesenting the history of obects as recorded in points in time |
+| `Working directory` | Actual files and changes on current directory |
+| `Index` \| `Staging area` | Snapshot of files and changes set aside to be commited |
+| `HEAD`              | Latest commit recorded in current branch  |
+| `SHA-1`             | Unique identifier repesenting history and information of obects |
+| `blob`              | Represents a file  |
+| `tree`              | Represents a directory of files |
+| `Commit`            | Represents a tree as recorded in a point in time  |
+| `Tag`               | Representa a recorded commit with optional annotation |
 
 
 ## Getting started
