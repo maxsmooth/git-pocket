@@ -25,7 +25,7 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 |-------------|-------------|---------------------------------------------------------|
 | `git init`    |             | Make current directory a git repository |
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
-| `git checkout`| `<object>`  | Switch to commit, branch, or SHA-1 |
+| `git checkout`| `<sha-1>`  | Switch to branch, or commit |
 | `git submodule` | `update --remote` | Pull submodules from remote repo |
 
 | Command     | Options     | Description |
