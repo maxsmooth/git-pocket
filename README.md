@@ -79,9 +79,11 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 |-------------|-------------|---------------------------------------------------------|
 | `git branch`        |                   | List branches |
 | `git branch`        | `<branchname>`    | Create new branch |
+| `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current tree |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
 | `git push`          | `--d origin <branchname>` | `--delete` remote branch |
+
 
 ## Tag
 
