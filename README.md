@@ -50,7 +50,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
-## Remotes
+## Remote
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git remote`     | `-v`     | List remote connections (or `git branch -r`) |
@@ -58,7 +58,6 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git remote rename`     | `<oldname> <newname>`     | Rename connection |
 | `git remote rm`     | `<name>`     | Remove connection |
 
-Notes:
 - Remote connections are more like named bookmarks rather than direct links to other repos
 - `git clone` automatically creates a remote connection often called `origin`
 
@@ -76,7 +75,7 @@ Notes:
 | `git push`     | `<remote> <branch>`     | Push the specified <branch> to <remote> |
 | `git push`     | `<remote> --all`     | Push all branches to <remote> |
 
-## Checking status
+## Status
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -95,7 +94,7 @@ Notes:
 |             | `<sha-1> <sha-1>` | 2 points in time to compare |
 |             | `<dir> | <file>` | Compare whole directory or limit to file |
 
-#### Diff examples:
+#### Examples:
 
 ```shell
 ## compare changes made to README.md between working tree (default) and latest commit (HEAD)
