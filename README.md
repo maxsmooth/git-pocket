@@ -29,6 +29,63 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 | `git submodule` | `update --remote` | Update submodules |
 | `git checkout`| `<sha-1>`  | Switch to branch, or commit |
 
+## Branch
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git branch`        |                   | List branches |
+| `git branch`        | `<branchname>`    | Create new branch |
+| `git branch`        | `-m <branchname> <newname>` | Rename branch |
+| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current tree |
+| `git branch`        | `-d <branchname>` | `--delete` branch |
+| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
+
+
+## Commit
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git add`         | `<file> | <path>`   |  Add files to staging area  |
+| `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
+| `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
+|                   | `-f`                |  Force deletion of files from disk |
+
+## Push
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git push`         | `origin <branchname>`  |  Push branch to remote server  |
+| `git push`         | `origin <tagname>`     |  Push tag  |
+| `git push`         | `origin --tags`        |  Push all tags  |
+
+## Remotes
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git remote`     | `-v`     | List remote connections (or `git branch -r`) |
+| `git remote add`     | `<name> <url>`     | Create namespace connected to remote repo |
+| `git remote rename`     | `<oldname> <newname>`     | Rename connection |
+| `git remote rm`     | `<name>`     | Remove connection |
+
+Notes:
+- Remote connections are more like named bookmarks rather than direct links to other repos
+- `git clone` automatically creates a remote connection often called `origin`
+
+## Fetch/Pull
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git fetch`     | `<remote>`     | Fetch all branches from remote (without merge) |
+| `git fetch`     | `<remote> <branch>`     | Fetch specific branch |
+| `git merge`     | `<remote>/<branch>`     | Merge fetched remote |
+| `git pull`      | `<remote>`     | Fetch and merge in one command |
+
+## Push
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git push`     | `<remote> <branch>`     | Push the specified <branch> to <remote> |
+| `git push`     | `<remote> --all`     | Push all branches to <remote> |
+
+## Checking status
+
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git status`  | `-s`        | Show the working tree status, with `--short` format |
@@ -56,45 +113,17 @@ $ git diff --stat HEAD ./path/README.md
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
-## Commit
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git add`         | `<file> | <path>`   |  Add files to staging area  |
-| `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
-| `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
-|                   | `-f`                |  Force deletion of files from disk |
-
-## Push
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git push`         | `origin <branchname>`  |  Push branch to remote server  |
-| `git push`         | `origin <tagname>`     |  Push tag  |
-| `git push`         | `origin --tags`        |  Push all tags  |
-
-## Branch
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git branch`        |                   | List branches |
-| `git branch`        | `<branchname>`    | Create new branch |
-| `git branch`        | `-m <branchname> <newname>` | Rename branch |
-| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current tree |
-| `git branch`        | `-d <branchname>` | `--delete` branch |
-| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
-
-
 ## Tag
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git tag`           |                   | List available tags |
+| `git tag`           |                   | List tags |
 | `git tag`           | `<v1.0.0>`        | Create tag, from latest commit, lightweight |
 | `git tag`           | `-a <v1.0.0> -m "<msg>"` | Create tag, with `--annotate`, from latest commit |
 | `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, with `--annotate`, from specific commit |
 | `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
+| `git push`     | `<remote> --tags`     | Push tags to <remote> |
 
 
