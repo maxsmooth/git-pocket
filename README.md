@@ -130,4 +130,6 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git push`         | `<remote> <tagname>`     |  Push tag  |
 | `git push`     | `<remote> --tags`     | Push tags to <remote> |
 
+## Update
 
+Update guide: https://github.com/heyallan/git-update
