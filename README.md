@@ -21,9 +21,9 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 
 | Keyword | Description |
 |-------|-------------|
-| `Working directory` | Actual files and on-going changes on current directory |
-| `Index` \| `Staging area` | Snapshot changes set aside to be commited |
-| `SHA-1`             | Unique identifier repesenting history and information |
+| `Working directory` | Actual files on current directory |
+| `Index` \| `Staging area` | Snapshot of changes set aside to be commited |
+| `SHA-1`             | Unique identifier repesenting history information |
 | `blob`              | Represents a file  |
 | `tree`              | Represents a directory of files |
 | `Commit`            | Represents a tree as recorded in a point in time  |
