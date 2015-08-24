@@ -3,11 +3,13 @@
 
 ## Definition
 
-Distributed revision control system, usually executed from command line rather than GUI though some desktop apps exist.
+Git is a distributed revision control system.
 
 ## Purpose
 
-Keep track of file changes, releases, etc. It allows many software developers to work on a given project without requiring them to share a common network.
+Keep track of software revisions and files changes.
+
+Git must be installed in local computer to generate revision files, then revision files can be saved to a private server or to hosted service (A.K.A remote origin) like github or beanstalk. Developers will fetch and pull revisions to and from master remote origin.
 
 ## Setup
 
