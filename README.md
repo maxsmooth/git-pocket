@@ -1,7 +1,15 @@
 
-# A quick Git reference
+# Git Pocket Guide
 
-## Setup Git
+## Definition
+
+Distributed revision control system, usually executed from command line rather than GUI though some desktop apps exist.
+
+## Purpose
+
+Keep track of file changes, releases, etc. It allows many software developers to work on a given project without requiring them to share a common network.
+
+## Setup
 
 Set Up Git guide: https://help.github.com/articles/set-up-git/
 
