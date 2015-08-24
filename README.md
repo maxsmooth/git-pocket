@@ -3,7 +3,7 @@
 
 ## Setup Git
 
-Set Up Git: https://help.github.com/articles/set-up-git/
+Set Up Git guide: https://help.github.com/articles/set-up-git/
 
 ## Git gibberish 
 
@@ -49,14 +49,6 @@ Set Up Git: https://help.github.com/articles/set-up-git/
 | `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
-
-## Push
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git push`         | `origin <branchname>`  |  Push branch to remote server  |
-| `git push`         | `origin <tagname>`     |  Push tag  |
-| `git push`         | `origin --tags`        |  Push all tags  |
 
 ## Remotes
 | Command     | Options     | Description |
@@ -124,6 +116,7 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
+| `git push`         | `<remote> <tagname>`     |  Push tag  |
 | `git push`     | `<remote> --tags`     | Push tags to <remote> |
 
 
