@@ -48,7 +48,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git branch`        |                   | List branches |
 | `git branch`        | `<branchname>`    | Create new branch |
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
-| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current tree |
+| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
 | `git push`          | `--d origin <branchname>` | `--delete` remote branch |
 
