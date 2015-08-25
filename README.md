@@ -127,7 +127,7 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
-| `git push`          | `<remote> --tags`     | Push tags to <remote> |
+| `git push`          | `<remote> --tags`     | Push all tags to <remote> |
 | `git push`          | `<remote> <tag>`     |  Push specific tag  |
 
 ## Update
