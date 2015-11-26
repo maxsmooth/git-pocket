@@ -52,16 +52,6 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git submodule` | `update --remote` | Update submodules |
 | `git checkout`| `<sha-1>`  | Switch to branch, or commit |
 
-## Branch
-
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git branch`        |                   | List branches |
-| `git branch`        | `<branchname>`    | Create new branch |
-| `git branch`        | `-m <branchname> <newname>` | Rename branch |
-| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
-| `git branch`        | `-d <branchname>` | `--delete` branch |
-
 
 ## Commit
 
@@ -105,6 +95,16 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 |-------------|-------------|---------------------------------------------------------|
 | `git push`     | `<remote> <branch>`     | Push the specified <branch> to <remote> |
 | `git push`     | `<remote> --all`     | Push all branches to <remote> |
+
+## Branch
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git branch`        |                   | List branches |
+| `git branch`        | `<branchname>`    | Create new branch |
+| `git branch`        | `-m <branchname> <newname>` | Rename branch |
+| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
+| `git branch`        | `-d <branchname>` | `--delete` branch |
 
 ## Status
 
@@ -151,4 +151,4 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 
 ## Update
 
-Update guide: https://github.com/heyallan/git-update
+How to update git: https://github.com/heyallan/git-update
