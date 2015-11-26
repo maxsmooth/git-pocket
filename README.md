@@ -33,9 +33,20 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 
 ## Getting started
 
+*Reference: https://git-scm.com/docs/git-config*
+
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
+| `git config`  | `--global user.name "Cooper Black"`    | Set global user name |
+| `git config`  | `--global user.email "cooperblack@email.com"`    | Set global user email |
+| `git config`  | `--list`    | Display configuration |
 | `git init`    |             | Make current directory a git repository |
+| `git remote`  | `add origin <url>`| Set remote origin |
+
+## Basic operations
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
 | `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
 | `git submodule` | `update --remote` | Update submodules |
@@ -50,7 +61,6 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
-| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
 
 
 ## Commit
@@ -62,7 +72,16 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
+## Push
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
+| `git push`    | `-u origin --all`| Push all branches to remote |
+| `git push`    | `-u origin --tags`| Push all tags to remote |
+
 ## Remote
+
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git remote`     | `-v`     | List remote connections (or `git branch -r`) |
