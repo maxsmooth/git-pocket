@@ -50,7 +50,6 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
 | `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
 | `git submodule` | `update --remote` | Update submodules |
-| `git checkout`| `<sha-1>`  | Switch to branch, or commit |
 
 
 ## Commit
@@ -102,6 +101,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 |-------------|-------------|---------------------------------------------------------|
 | `git branch`        |                   | List branches |
 | `git branch`        | `<branchname>`    | Create new branch |
+| `git checkout`      | `<sha-1>`         | Switch to branch, or commit |
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
