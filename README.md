@@ -1,15 +1,11 @@
 
 # Git Pocket Guide
 
-Git pocket guide for busy people
+**Type:** Git pocket guide for busy people
 
-**Definition**
+**Definition:** Git is a distributed revision control system.
 
-Git is a distributed revision control system.
-
-**Purpose**
-
-Keep track of software revisions and files changes.
+**Purpose:** Keep track of software revisions and files changes.
 
 Git must be installed in local computer to generate revision files, then revision files can be saved to a private server or to hosted service (A.K.A remote origin) like github or beanstalk. Developers will fetch and pull revisions to and from master remote origin.
 
@@ -20,7 +16,7 @@ Git must be installed in local computer to generate revision files, then revisio
 - [$setup](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#setup)
 - [$gibberish](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#gibberish)
 - [$getting-started](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#getting-started)
-- [$baseic-operations](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#basic-operations)
+- [$clone](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#clone)
 - [$commit](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#commit)
 - [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push)
 - [$remote](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#remote)
@@ -51,8 +47,6 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 
 ## $getting-started
 
-*Reference: https://git-scm.com/docs/git-config*
-
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git config`  | `--global user.name "Cooper Black"`    | Set global user name |
@@ -61,7 +55,9 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git init`    |             | Make current directory a git repository |
 | `git remote`  | `add origin <url>`| Set remote origin |
 
-## $basic-operations
+Reference: https://git-scm.com/docs/git-config
+
+## $clone
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -69,6 +65,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
 | `git submodule` | `update --remote` | Update submodules |
 
+Reference: https://git-scm.com/docs/git-clone
 
 ## $commit
 
@@ -79,6 +76,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
+Reference: https://git-scm.com/docs/git-commit
+
 ## $push
 
 | Command     | Options     | Description |
@@ -86,6 +85,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git push`    | `--d origin <branchname>` | `--delete` remote branch |
 | `git push`    | `-u origin --all`| Push all branches to remote |
 | `git push`    | `-u origin --tags`| Push all tags to remote |
+
+Reference: https://git-scm.com/docs/git-push
 
 ## $remote
 
@@ -98,6 +99,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 
 - Remote connections are more like named bookmarks rather than direct links to other repos
 - `git clone` automatically creates a remote connection often called `origin`
+- Reference: https://git-scm.com/docs/git-remote
 
 ## $fetch-pull
 | Command     | Options     | Description |
@@ -106,6 +108,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git fetch`     | `<remote> <branch>`     | Fetch specific branch |
 | `git merge`     | `<remote>/<branch>`     | Merge fetched remote |
 | `git pull`      | `<remote>`     | Fetch and merge in one command |
+
+Reference: https://git-scm.com/docs/git-fetch, https://git-scm.com/docs/git-pull
 
 
 ## $branch
@@ -121,6 +125,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git push`          | `<remote> <branch>`     | Push the specified <branch> to <remote> |
 | `git push`          | `<remote> --all`     | Push all branches to <remote> |
 
+Reference: https://git-scm.com/docs/git-branch
+
 ## $status
 
 | Command     | Options     | Description |
@@ -128,6 +134,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git status`  | `-s`        | Show the working tree status, with `--short` format |
 | `git log`     | `--oneline` | Show commit logs, with `--oneline` format |
 | `git ls-files`|             | Show information about files in the index and the working tree |
+
+Reference: https://git-scm.com/docs/git-status
 
 ## $diff
 
@@ -139,6 +147,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 |             | `--stat`    | Optional short format |
 |             | `<sha-1> <sha-1>` | 2 points in time to compare |
 |             | `<dir> | <file>` | Compare whole directory or limit to file |
+
+Reference: https://git-scm.com/docs/git-diff
 
 **Examples:**
 
@@ -163,6 +173,8 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
 | `git push`          | `<remote> --tags`     | Push all tags to `<remote>` |
 | `git push`          | `<remote> <tag>`     |  Push specific tag to `<remote>`  |
+
+Reference: https://git-scm.com/docs/git-tag
 
 ## $update
 
