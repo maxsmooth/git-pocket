@@ -25,18 +25,17 @@ Git must be installed in local computer to generate revision files, then revisio
 - [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push)
 - [$remote](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#remote)
 - [$fetch-pull](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#fetchpull)
-- [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push-1)
 - [$branch](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#branch)
 - [$status](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#status)
 - [$diff](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#diff)
 - [$tag](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#tag)
 - [$update](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#update)
 
-## Setup
+## $setup
 
 Set Up Git guide: https://help.github.com/articles/set-up-git/
 
-## Git gibberish 
+## $git-gibberish 
 
 | Keyword | Description |
 |-------|-------------|
@@ -50,7 +49,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `Tag`               | Represents a specific commit used for marking important points in hisotry |
 
 
-## Getting started
+## $getting-started
 
 *Reference: https://git-scm.com/docs/git-config*
 
@@ -62,7 +61,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git init`    |             | Make current directory a git repository |
 | `git remote`  | `add origin <url>`| Set remote origin |
 
-## Basic operations
+## $basic-operations
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -71,7 +70,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git submodule` | `update --remote` | Update submodules |
 
 
-## Commit
+## $commit
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -80,15 +79,15 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
 
-## Push
+## $push
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git push`          | `--d origin <branchname>` | `--delete` remote branch |
+| `git push`    | `--d origin <branchname>` | `--delete` remote branch |
 | `git push`    | `-u origin --all`| Push all branches to remote |
 | `git push`    | `-u origin --tags`| Push all tags to remote |
 
-## Remote
+## $remote
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -100,7 +99,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 - Remote connections are more like named bookmarks rather than direct links to other repos
 - `git clone` automatically creates a remote connection often called `origin`
 
-## Fetch/Pull
+## $fetch-pull
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git fetch`     | `<remote>`     | Fetch all branches from remote (without merge) |
@@ -108,13 +107,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git merge`     | `<remote>/<branch>`     | Merge fetched remote |
 | `git pull`      | `<remote>`     | Fetch and merge in one command |
 
-## Push
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git push`     | `<remote> <branch>`     | Push the specified <branch> to <remote> |
-| `git push`     | `<remote> --all`     | Push all branches to <remote> |
 
-## Branch
+## $branch
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -124,8 +118,10 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
+| `git push`          | `<remote> <branch>`     | Push the specified <branch> to <remote> |
+| `git push`          | `<remote> --all`     | Push all branches to <remote> |
 
-## Status
+## $status
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -133,7 +129,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git log`     | `--oneline` | Show commit logs, with `--oneline` format |
 | `git ls-files`|             | Show information about files in the index and the working tree |
 
-## Diff
+## $diff
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -154,7 +150,7 @@ $ git diff --stat HEAD ./path/README.md
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
-## Tag
+## $tag
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
@@ -168,6 +164,6 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git push`          | `<remote> --tags`     | Push all tags to `<remote>` |
 | `git push`          | `<remote> <tag>`     |  Push specific tag to `<remote>`  |
 
-## Update
+## $update
 
 How to update git: https://github.com/heyallan/git-update
