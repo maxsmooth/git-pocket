@@ -7,7 +7,7 @@ Git pocket guide for busy people
 
 **Purpose:** Keep track of software revisions and files changes.
 
-Git must be installed in local computer to generate revision files, then revision files can be saved to a private server or to hosted service (A.K.A remote origin) like github or beanstalk. Developers will fetch and pull revisions to and from master remote origin.
+Git must be installed in local computer to generate revisions, then revisions can be saved to a remote server (like github or beanstalk). Team developers will push (and pull) revisions to (and from) that remote.
 
 ## TOC (table of contents)
 
