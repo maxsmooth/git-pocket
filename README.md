@@ -3,11 +3,11 @@
 
 Git pocket guide for busy people
 
-## Definition
+**Definition**
 
 Git is a distributed revision control system.
 
-## Purpose
+**Purpose**
 
 Keep track of software revisions and files changes.
 
@@ -15,10 +15,10 @@ Git must be installed in local computer to generate revision files, then revisio
 
 ## TOC (table of contents)
 
-*Also use “$” symbol to perform searches by keyword*
+**Use “$” symbol to search thru the document**
 
 - [$setup](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#setup)
-- [$gibberish](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#git-gibberish)
+- [$gibberish](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#gibberish)
 - [$getting-started](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#getting-started)
 - [$baseic-operations](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#basic-operations)
 - [$commit](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#commit)
@@ -35,7 +35,7 @@ Git must be installed in local computer to generate revision files, then revisio
 
 Set Up Git guide: https://help.github.com/articles/set-up-git/
 
-## $git-gibberish 
+## $gibberish 
 
 | Keyword | Description |
 |-------|-------------|
@@ -140,7 +140,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 |             | `<sha-1> <sha-1>` | 2 points in time to compare |
 |             | `<dir> | <file>` | Compare whole directory or limit to file |
 
-#### Examples:
+**Examples:**
 
 ```shell
 ## compare changes made to README.md between working tree (default) and latest commit (HEAD)
