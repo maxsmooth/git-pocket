@@ -13,6 +13,25 @@ Keep track of software revisions and files changes.
 
 Git must be installed in local computer to generate revision files, then revision files can be saved to a private server or to hosted service (A.K.A remote origin) like github or beanstalk. Developers will fetch and pull revisions to and from master remote origin.
 
+## TOC (table of contents)
+
+*Also use “$” symbol to perform searches by keyword*
+
+- [$setup](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#setup)
+- [$gibberish](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#git-gibberish)
+- [$getting-started](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#getting-started)
+- [$baseic-operations](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#basic-operations)
+- [$commit](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#commit)
+- [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push)
+- [$remote](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#remote)
+- [$fetch-pull](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#fetchpull)
+- [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push-1)
+- [$branch](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#branch)
+- [$status](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#status)
+- [$diff](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#diff)
+- [$tag](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#tag)
+- [$update](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#update)
+
 ## Setup
 
 Set Up Git guide: https://help.github.com/articles/set-up-git/
