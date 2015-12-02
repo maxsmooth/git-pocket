@@ -7,7 +7,13 @@ Git pocket guide for busy people
 
 **Purpose:** Keep track of software revisions and files changes.
 
-Git must be installed in local computer to generate revisions, then revisions can be saved to a remote server (like github or beanstalk). Team developers will push (and pull) revisions to (and from) that remote.
+Git must be installed in local computer to generate revisions, then revisions are saved to a remote [distributed](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) repository. This repository can be a private server, or an online service like github. Team developers will push (and pull) revisions to (and from) that remote.
+
+Hosted services:
+
+- [github.com](https://github.com) Good for open source projects with comminity collaboration
+- [beanstalkapp.com](http://beanstalkapp.com/) Good for private projects with built-in deploy system
+- [bitbucket.org](https://bitbucket.org/) Good for free private projects
 
 ## TOC (table of contents)
 
