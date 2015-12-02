@@ -1,7 +1,7 @@
 
 # Git Pocket Guide
 
-**Type:** Git pocket guide for busy people
+Git pocket guide for busy people
 
 **Definition:** Git is a distributed revision control system.
 
@@ -20,7 +20,7 @@ Git must be installed in local computer to generate revision files, then revisio
 - [$commit](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#commit)
 - [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push)
 - [$remote](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#remote)
-- [$fetch-pull](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#fetchpull)
+- [$fetch-pull](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#fetch-pull)
 - [$branch](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#branch)
 - [$status](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#status)
 - [$diff](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#diff)
