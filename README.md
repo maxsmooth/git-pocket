@@ -79,6 +79,7 @@ Reference: https://git-scm.com/docs/git-config
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
 | `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
 | `git submodule` | `update --remote` | Update submodules |
+| `git submodule` | `status --recursive` | List submodules |
 
 Reference: https://git-scm.com/docs/git-clone
 
