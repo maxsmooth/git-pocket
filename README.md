@@ -1,8 +1,6 @@
 
 # Git Pocket Guide
 
-Git pocket guide for busy people
-
 **Definition:** Git is a distributed revision control system.
 
 **Purpose:** Keep track of software revisions and files changes.
