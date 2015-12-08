@@ -32,6 +32,7 @@ Hosted services:
 - [$gibberish](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#gibberish)
 - [$getting-started](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#getting-started)
 - [$clone](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#clone)
+- [$submodule](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#submodule)
 - [$commit](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#commit)
 - [$push](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#push)
 - [$remote](https://github.com/heyallan/git-pocket/blob/gh-pages/README.md#remote)
@@ -78,10 +79,27 @@ Reference: https://git-scm.com/docs/git-config
 |-------------|-------------|---------------------------------------------------------|
 | `git clone`   | `<giturl>`  | Clone remote repository into current directory |
 | `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
+
+Reference: https://git-scm.com/docs/git-clone
+
+## $submodule
+
+| Command     | Options     | Description |
+|-------------|-------------|---------------------------------------------------------|
+| `git clone`     | `--recursive <giturl>`  | Clone remote repository with submodules |
+| `git submodule` | `add <giturl>`  | Add submodule |
 | `git submodule` | `update --remote` | Update submodules |
 | `git submodule` | `status --recursive` | List submodules |
 
-Reference: https://git-scm.com/docs/git-clone
+**Remove submodule:**
+
+```shell
+$ git submodule deinit <path/to/submodule>
+$ git rm <path/to/submodule>
+$ git commit -m "Remove unused submodule"
+```
+
+Reference: https://git-scm.com/docs/git-submodule
 
 ## $commit
 
