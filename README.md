@@ -94,7 +94,6 @@ Reference: https://git-scm.com/docs/git-clone
 ```shell
 $ git submodule deinit <path/to/submodule>
 $ git rm <path/to/submodule>
-$ git commit -m "Remove unused submodule"
 ```
 
 Reference: https://git-scm.com/docs/git-submodule
