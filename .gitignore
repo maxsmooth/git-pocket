@@ -1,14 +1,12 @@
+# Raw source file #
+############
 @*
-node_modules
+raw
+admin
 
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# Node #
+############
+node_modules
 
 # Packages #
 ############
