@@ -156,8 +156,8 @@ Reference: https://git-scm.com/docs/git-fetch, https://git-scm.com/docs/git-pull
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
-| `git push`          | `<remote> <branch>`     | Push the specified <branch> to <remote> |
-| `git push`          | `<remote> --all`     | Push all branches to <remote> |
+| `git push`          | `<remote> <branch>`     | Push the specified `<branch>` to `<remote>` |
+| `git push`          | `<remote> --all`     | Push all branches to `<remote>` |
 
 Reference: https://git-scm.com/docs/git-branch
 
