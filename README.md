@@ -66,6 +66,7 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `git config`  | `--global user.name "Cooper Black"`    | Set global user name |
 | `git config`  | `--global user.email "cooperblack@email.com"`    | Set global user email |
 | `git config`  | `--list`    | Display configuration |
+| `git config`  |  `--global --list`  | Display global configuration |
 | `git init`    |             | Make current directory a git repository |
 | `git remote`  | `add origin <url>`| Set remote origin |
 | `git remote`  | `rm origin` | Remove `origin` settings from `.git/config` |
