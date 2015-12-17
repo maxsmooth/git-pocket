@@ -131,8 +131,8 @@ Reference: https://git-scm.com/docs/git-push
 | `git remote rename`     | `<oldname> <newname>`     | Rename connection |
 | `git remote rm`     | `<name>`     | Remove connection |
 
-- Remote connections are more like named bookmarks rather than direct links to other repos
-- `git clone` automatically creates a remote connection often called `origin`
+- Remote connections are like bookmarks named after remote repos
+- `git clone` automatically creates a remote connection usually called `origin`
 - Reference: https://git-scm.com/docs/git-remote
 
 ## $fetch-pull
