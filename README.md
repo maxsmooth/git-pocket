@@ -115,6 +115,7 @@ Reference: https://git-scm.com/docs/git-commit
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
+| `git push`    | `origin <branchname>` | push to remote branch |
 | `git push`    | `--d origin <branchname>` | `--delete` remote branch |
 | `git push`    | `-u origin --all`| Push all branches to remote |
 | `git push`    | `-u origin --tags`| Push all tags to remote |
