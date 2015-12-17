@@ -119,6 +119,8 @@ Reference: https://git-scm.com/docs/git-commit
 | `git push`    | `--d origin <branchname>` | `--delete` remote branch |
 | `git push`    | `-u origin --all`| Push all branches to remote |
 | `git push`    | `-u origin --tags`| Push all tags to remote |
+| `git push`    | `<remote> <branch>`     | Push current branch to `<remote> <branch>` |
+| `git push`    | `<remote> --all`     | Push all branches to `<remote>` |
 
 Reference: https://git-scm.com/docs/git-push
 
@@ -156,8 +158,6 @@ Reference: https://git-scm.com/docs/git-fetch, https://git-scm.com/docs/git-pull
 | `git branch`        | `-m <branchname> <newname>` | Rename branch |
 | `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
 | `git branch`        | `-d <branchname>` | `--delete` branch |
-| `git push`          | `<remote> <branch>`     | Push the specified `<branch>` to `<remote>` |
-| `git push`          | `<remote> --all`     | Push all branches to `<remote>` |
 
 Reference: https://git-scm.com/docs/git-branch
 
