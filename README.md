@@ -58,6 +58,8 @@ Set Up Git guide: https://help.github.com/articles/set-up-git/
 | `HEAD`              | Represents the latest commit in current branch  |
 | `Tag`               | Represents a specific commit used for marking important points in hisotry |
 
+Make git rember your credentials from 2nd time you push/pull and on: `$ git config credential.helper cache`
+
 
 ## $getting-started
 
