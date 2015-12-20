@@ -1,8 +1,5 @@
 # Raw source file #
 ############
-@*
-raw
-admin
 
 # Node #
 ############
@@ -10,9 +7,10 @@ node_modules
 
 # kirby #
 ############
-/site/accounts
-/assets/avatars
-/thumbs/*
+dist/site/accounts/*
+dist/assets/avatars/*
+dist/thumbs/*
+dist/content/*
 
 # Packages #
 ############
