@@ -71,9 +71,9 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | `git config`  |  `--global --list`  | Display global configuration |
 | `git init`    |             | Make current directory a git repository |
 | `git remote`  | `add origin <url>`| Set remote origin |
-| `git remote`  | `rm origin` | Remove `origin` settings from `.git/config` |
-| `rm`  | `.git/FETCH_HEAD` | Remove `FETCH_HEAD` which still points to remote |
-| `rm`  | `-r --cached <filename>`  | Untrack file without deleting |
+| Step 01 `git remote`  | `rm origin` | Remove `origin` settings from `.git/config` |
+| Step 02 `rm`  | `.git/FETCH_HEAD` | Remove `FETCH_HEAD` which still points to remote |
+| `git rm`  | `-r --cached <filename>`  | Untrack file without deleting |
 
 Reference: https://git-scm.com/docs/git-config
 
