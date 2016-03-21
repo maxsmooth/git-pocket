@@ -75,6 +75,16 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | Step 02 `rm`  | `.git/FETCH_HEAD` | Remove `FETCH_HEAD` which still points to remote |
 | `git rm`  | `-r --cached <filename>`  | Untrack file without deleting |
 
+**To untrack files after adding `.gitignore`:**
+
+```shell
+# remove all
+$ git rm -r --cached .
+
+# add all again (now gitignore will take effect)
+$ git add .
+```
+
 Reference: https://git-scm.com/docs/git-config
 
 ## $clone
