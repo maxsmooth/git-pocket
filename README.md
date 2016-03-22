@@ -72,30 +72,9 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | `git config` | `--global --list`  | Display global configuration |
 | `git init` | | Make current directory a git repository |
 | `git remote` | `add origin <url>`| Set remote origin |
-| `git rm` | `-r --cached <filename>`  | Untrack file without deleting |
 | `git ls-tree` | `-r <branch> --name-only`  | List files being tracked |
 
 Reference: https://git-scm.com/docs/git-config
-
-**Remove remote origin:**
-
-```shell
-# Remove `origin` settings from .git/config
-git remote rm origin
-
-# Remove `FETCH_HEAD` which still points to remote
-git rm .git/FETCH_HEAD
-```
-
-**Untrack hidden files, or update list of tracked files, after adding `.gitignore`:**
-
-```shell
-# remove all
-$ git rm -r --cached .
-
-# add all again, now gitignore will take effect (try to add .gitignore from the start next time)
-$ git add .
-```
 
 ## $clone
 
@@ -128,12 +107,23 @@ Reference: https://git-scm.com/docs/git-submodule
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git add`         | `<file> | <path>`   |  Add files to staging area  |
+| `git add`         | `<filename>`   |  Add files to staging area  |
 | `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
-| `git rm`          | `<file> | <path>`   |  Remove files from the working tree and from the index |
+| `git rm`          | `<filenama>`   |  Remove files from the working tree and from the index |
 |                   | `-f`                |  Force deletion of files from disk |
+| `git rm` | `-r --cached <filename>`  | Untrack file (without deleting) |
 
 Reference: https://git-scm.com/docs/git-commit
+
+**Untrack hidden files, or update list of tracked files, after adding `.gitignore`:**
+
+```shell
+# remove all
+$ git rm -r --cached .
+
+# add all again, now gitignore will take effect (try to add .gitignore from the start next time)
+$ git add .
+```
 
 ## $push
 
@@ -150,6 +140,9 @@ Reference: https://git-scm.com/docs/git-push
 
 ## $remote
 
+- Remote connections are like bookmarks named after remote repos
+- `git clone` automatically creates a remote connection usually called `origin`
+
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
 | `git remote`     | `-v`     | List remote connections (or `git branch -r`) |
@@ -157,9 +150,17 @@ Reference: https://git-scm.com/docs/git-push
 | `git remote rename`     | `<oldname> <newname>`     | Rename connection |
 | `git remote rm`     | `<name>`     | Remove connection |
 
-- Remote connections are like bookmarks named after remote repos
-- `git clone` automatically creates a remote connection usually called `origin`
-- Reference: https://git-scm.com/docs/git-remote
+Reference: https://git-scm.com/docs/git-remote
+
+**Remove remote origin:**
+
+```shell
+# Remove `origin` settings from .git/config
+git remote rm origin
+
+# Remove `FETCH_HEAD` which still points to remote
+git rm .git/FETCH_HEAD
+```
 
 ## $fetch-pull
 | Command     | Options     | Description |
