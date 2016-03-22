@@ -5,7 +5,7 @@
 
 **Purpose:** Keep track of software revisions and files changes.
 
-Git must be installed in local computer to generate revisions, then revisions are saved to a remote [distributed](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) repository. This repository can be a private servero of yours, or hosted service like github. Team developers will push (and pull) revisions to (and from) that remote.
+Git software (like driver) must be installed in local computer to generate revisions, then revisions are saved to local repository and to a remote [distributed](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) repository. The remote repository can be located at your own servers (like [GitLab](https://about.gitlab.com/)), or use a cloud service like [github](https://github.com/). Team developers will push (and pull) revisions to (and from) that remote.
 
 Hosted services:
 
