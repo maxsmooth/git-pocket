@@ -7,20 +7,21 @@
 
 [Git software](https://git-scm.com/downloads) (like a driver) must be installed in local computer before using it, then you can start tracking software revisions. Revisions are saved to local repository and to a remote [distributed](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows) repository. The remote repository can be located at your own servers (like [GitLab](https://about.gitlab.com/)), or at a cloud service like [github](https://github.com/). Team developers will push (and pull) revisions from that remote repository.
 
-Hosted services:
+**Cloud hosted services:**
 
 - [github.com](https://github.com)
-  - good for open source projects (free)
-  - has great comminity collaboration
+  - free for open source projects
+  - has great community collaboration for open source
 - [beanstalkapp.com](http://beanstalkapp.com/)
-  - good for private projects (paid)
-  - has built-in deploy system
+  - free for 1 user + 1 repo
+  - great built-in deploy system
 - [bitbucket.org](https://bitbucket.org/)
-  - good for private projects (free)
+  - free for teams under 5 users
+  - great documentation
 - [buddy.works](buddy.works)
-  - good for private projects (cheap)
-  - has awesome team collaboration
-  - has awesome deploy sistem
+  - free for 1 repo + unlimited users
+  - great team collaboration tools
+  - great built-in deploy system (extra brownie points for deploy pipelines)
 
 ## TOC (table of contents)
 
