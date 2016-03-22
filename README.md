@@ -74,7 +74,9 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | `git rm`  | `-r --cached <filename>`  | Untrack file without deleting |
 | `git ls-tree`  | `-r master --name-only`  | List files being tracked |
 
-**Remove remote repository:**
+Reference: https://git-scm.com/docs/git-config
+
+**Remove origin reference:**
 
 ```shell
 # Remove `origin` settings from .git/config
@@ -93,8 +95,6 @@ $ git rm -r --cached .
 # add all again (now gitignore will take effect)
 $ git add .
 ```
-
-Reference: https://git-scm.com/docs/git-config
 
 ## $clone
 
