@@ -64,16 +64,16 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 
 ## $getting-started
 
-| Command     | Options     | Description |
-|-------------|-------------|---------------------------------------------------------|
-| `git config`  | `--global user.name "Cooper Black"`    | Set global user name |
-| `git config`  | `--global user.email "cooperblack@email.com"`    | Set global user email |
-| `git config`  | `--list`    | Display configuration |
-| `git config`  |  `--global --list`  | Display global configuration |
-| `git init`    |             | Make current directory a git repository |
-| `git remote`  | `add origin <url>`| Set remote origin |
-| `git rm`  | `-r --cached <filename>`  | Untrack file without deleting |
-| `git ls-tree`  | `-r <branch> --name-only`  | List files being tracked |
+| Command --options     | Description |
+|--------------------------|---------------------------------------------------------|
+| `git config --global user.name "Cooper Black"`    | Set global user name |
+| `git config --global user.email "cooperblack@email.com"`    | Set global user email |
+| `git config --list`    | Display configuration |
+| `git config --global --list`  | Display global configuration |
+| `git init` | Make current directory a git repository |
+| `git remote add origin <url>`| Set remote origin |
+| `git rm -r --cached <filename>`  | Untrack file without deleting |
+| `git ls-tree -r <branch> --name-only`  | List files being tracked |
 
 Reference: https://git-scm.com/docs/git-config
 
