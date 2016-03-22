@@ -87,7 +87,7 @@ git remote rm origin
 git rm .git/FETCH_HEAD
 ```
 
-**Untrack hidden files, or update tracked files, after adding `.gitignore`:**
+**Untrack hidden files, or update list of tracked files, after adding `.gitignore`:**
 
 ```shell
 # remove all
