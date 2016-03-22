@@ -76,7 +76,7 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 
 Reference: https://git-scm.com/docs/git-config
 
-**Remove origin reference:**
+**Remove remote origin:**
 
 ```shell
 # Remove `origin` settings from .git/config
