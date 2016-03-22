@@ -93,7 +93,7 @@ git rm .git/FETCH_HEAD
 # remove all
 $ git rm -r --cached .
 
-# add all again (now gitignore will take effect)
+# add all again, now gitignore will take effect, (try to add .gitignore from the start next time)
 $ git add .
 ```
 
