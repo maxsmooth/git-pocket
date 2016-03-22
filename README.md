@@ -67,7 +67,7 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | Command --options     | Description |
 |--------------------------|---------------------------------------------------------|
 | `git config --global user.name "Cooper Black"`    | Set global user name |
-| `git config --global user.email "cooperblack@email.com"`    | Set global user email |
+| `git config --global user.email "cooper@black.com"`    | Set global user email |
 | `git config --list`    | Display configuration |
 | `git config --global --list`  | Display global configuration |
 | `git init` | Make current directory a git repository |
