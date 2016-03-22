@@ -7,10 +7,11 @@ node_modules
 
 # kirby #
 ############
-dist/site/accounts/*
-dist/assets/avatars/*
-dist/thumbs/*
-dist/content/*
+# these file names will be reserved
+**/accounts/*
+**/avatars/*
+**/thumbs/*
+**/content/*
 
 # Packages #
 ############
