@@ -73,7 +73,7 @@ Make git rember your credentials from 2nd time you push/pull and on: `$ git conf
 | `git init`    |             | Make current directory a git repository |
 | `git remote`  | `add origin <url>`| Set remote origin |
 | `git rm`  | `-r --cached <filename>`  | Untrack file without deleting |
-| `git ls-tree`  | `-r master --name-only`  | List files being tracked |
+| `git ls-tree`  | `-r <branch> --name-only`  | List files being tracked |
 
 Reference: https://git-scm.com/docs/git-config
 
