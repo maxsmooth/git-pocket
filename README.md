@@ -10,8 +10,8 @@
 **Cloud hosted services:**
 
 - [github.com](https://github.com)
-  - free for open source projects
-  - has great community collaboration for open source
+  - free for open source
+  - great community for open source
 - [beanstalkapp.com](http://beanstalkapp.com/)
   - free for 1 user + 1 repo
   - great built-in deploy system
