@@ -7,7 +7,7 @@ node_modules
 
 # kirby #
 ############
-# these file names will be reserved
+# these directories will be ignored wherever they are
 **/accounts/*
 **/avatars/*
 **/thumbs/*
