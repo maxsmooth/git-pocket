@@ -125,16 +125,13 @@ $ git rm -r --cached .
 $ git add .
 ```
 
-## $push
+## $push branches (see tags for pushing tags)
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git push`    | `origin <branchname>` | push to remote branch |
-| `git push`    | `--d origin <branchname>` | `--delete` remote branch |
-| `git push`    | `-u origin --all`| Push all branches to remote |
-| `git push`    | `-u origin --tags`| Push all tags to remote |
-| `git push`    | `<remote> <branch>`     | Push current branch to `<remote> <branch>` |
-| `git push`    | `<remote> --all`     | Push all branches to `<remote>` |
+| `git push`    | `<remotename> <branchname>`     | Push branch to remote |
+| `git push`    | `<remotename> --all`            | Push all branches to remote |
+| `git push`    | `--d <remotename> <branchname>` | `--delete` remote branch |
 
 Reference: https://git-scm.com/docs/git-push
 
@@ -145,10 +142,11 @@ Reference: https://git-scm.com/docs/git-push
 
 | Command     | Options     | Description |
 |-------------|-------------|---------------------------------------------------------|
-| `git remote`     | `-v`     | List remote connections (or `git branch -r`) |
-| `git remote add`     | `<name> <url>`     | Create namespace connected to remote repo |
-| `git remote rename`     | `<oldname> <newname>`     | Rename connection |
-| `git remote rm`     | `<name>`     | Remove connection |
+| `git remote` | `-v`                         | List remote repository endpoints |
+| `git branch` | `-r`                         | List remote repository branches |
+| `git remote` | `add <name> <url>`           | Create namespaced connection to a remote repository |
+| `git remote` | `rename <oldname> <newname>` | Rename connection |
+| `git remote` | `rm <name>`                  | Remove connection |
 
 Reference: https://git-scm.com/docs/git-remote
 
@@ -230,8 +228,8 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
 | `git show`          | `<v1.0.0>`        | Show tag data and message |
 | `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
-| `git push`          | `<remote> <tag>`  | Push specific tag to `<remote>` (Recommended) |
-| `git push`          | `<remote> --tags` | Push all tags to `<remote>` (Only if necessary) |
+| `git push`          | `<remote> <tag>`  | Push specific tag to `<remote>` (recommended) |
+| `git push`          | `<remote> --tags` | Push all tags to `<remote>` (only if necessary) |
 
 Reference: https://git-scm.com/docs/git-tag
 
