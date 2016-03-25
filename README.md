@@ -232,7 +232,3 @@ $ git diff --stat a649900 24bdd58 ./path/README.md
 | `git push`          | `<remote> --tags` | Push all tags to `<remote>` (only if necessary) |
 
 Reference: https://git-scm.com/docs/git-tag
-
-## $update
-
-How to update git: https://github.com/heyallan/git-update
