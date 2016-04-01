@@ -8,13 +8,21 @@ bower_components
 
 # kirby #
 ############
-# these directories will be ignored wherever they are
-# don't use this folder names for other than kirby content
-# this also works for kirby multisite
-**/accounts/*
-**/avatars/*
-**/thumbs/*
-**/content/*
+# empty folders with a gitkeep file will be preserved
+# don't ship predefined content, otherwise it would be overwritten on push
+############
+# content
+dist/site/accounts/*
+!dist/site/accounts/.gitkeep
+# avatars
+dist/assets/avatars/*
+!dist/assets/avatars/.gitkeep
+# thumbs
+dist/thumbs/*
+!dist/thumbs/.gitkeep
+# content
+dist/content/*
+!dist/content/.gitkeep
 
 # composer #
 ############
