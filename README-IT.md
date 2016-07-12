@@ -65,48 +65,48 @@ Fai in modo che git ricordi le tue credenziali dalla seconda volta in poi che le
 
 ## $getting-started
 
-| Command | Options | Description |
+| Comando | Opzioni | Descrizione |
 |------------|--------------|---------------------------------------------------------|
-| `git config` | `--global user.name "Cooper Black"`    | Set global user name |
-| `git config` | `--global user.email "cooper@black.com"`    | Set global user email |
-| `git config` | `--list`    | Display configuration |
-| `git config` | `--global --list`  | Display global configuration |
-| `git init` | | Make current directory a git repository |
-| `git remote` | `add origin <url>`| Set remote origin |
-| `git ls-tree` | `-r <branch> --name-only`  | List files being tracked |
+| `git config` | `--global user.name "Cooper Black"`    | Imposta lo user name globale |
+| `git config` | `--global user.email "cooper@black.com"`    | Imposta la user email globale |
+| `git config` | `--list`    | Mostra la configurazione |
+| `git config` | `--global --list`  | Mostra la configuration globale |
+| `git init` | | Imposta la directory corrente come un repository git |
+| `git remote` | `add origin <url>`| Imposta il remote origin (la sorgente remota) |
+| `git ls-tree` | `-r <branch> --name-only`  | Elenca i file monitorati |
 
-Reference: https://git-scm.com/docs/git-config
+Riferimenti: https://git-scm.com/docs/git-config
 
 ## $clone
 
-| Command     | Options     | Description |
+| Comando | Opzioni | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git clone`   | `<giturl>`  | Clone remote repository into current directory |
-| `git clone`   | `--recursive <giturl>`  | Clone remote repository with submodules |
+| `git clone`   | `<giturl>`  | Clona un repository remoto nella directory corrente |
+| `git clone`   | `--recursive <giturl>`  | Clona un repository remoto con i sotto moduli (submodule) |
 
-Reference: https://git-scm.com/docs/git-clone
+Riferimenti: https://git-scm.com/docs/git-clone
 
 ## $submodule
 
-| Command     | Options     | Description |
+| Comando | Opzioni | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git clone`     | `--recursive <giturl>`  | Clone remote repository with submodules |
-| `git submodule` | `add <giturl>`  | Add submodule |
-| `git submodule` | `update --remote` | Update submodules |
-| `git submodule` | `status --recursive` | List submodules |
+| `git clone`     | `--recursive <giturl>`  | Clona un repository remoto con i sotto moduli |
+| `git submodule` | `add <giturl>`  | Aggiunge un sotto modulo |
+| `git submodule` | `update --remote` | Aggiorna un sotto modulo |
+| `git submodule` | `status --recursive` | Mostra i sotto moduli |
 
-**Remove submodule:**
+**Eliminare un sottomodulo:**
 
 ```shell
 $ git submodule deinit <path/to/submodule>
 $ git rm <path/to/submodule>
 ```
 
-Reference: https://git-scm.com/docs/git-submodule
+Riferimenti: https://git-scm.com/docs/git-submodule
 
 ## $commit
 
-| Command     | Options     | Description |
+| Comando | Opzioni | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
 | `git add`         | `<filename>`   |  Add files to staging area  |
 | `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
