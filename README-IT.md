@@ -162,74 +162,74 @@ git rm .git/FETCH_HEAD
 ```
 
 ## $fetch-pull
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git fetch`     | `<remote>`     | Fetch all branches from remote (without merge) |
-| `git fetch`     | `<remote> <branch>`     | Fetch specific branch |
-| `git merge`     | `<remote>/<branch>`     | Merge fetched remote |
-| `git pull`      | `<remote>`     | Fetch and merge in one command |
+| `git fetch`     | `<remote>`     | Effettua il Fetch di tutti i rami dal remoto (senza fare merge) |
+| `git fetch`     | `<remote> <branch>`     | Effettua il Fetch di uno specifico ramo |
+| `git merge`     | `<remote>/<branch>`     | Effettua il Merge del Fetche remoto già effettuato |
+| `git pull`      | `<remote>`     | effettua il Fetch e il Merge in un unico comando |
 
-Reference: https://git-scm.com/docs/git-fetch, https://git-scm.com/docs/git-pull
+Riferimenti: https://git-scm.com/docs/git-fetch, https://git-scm.com/docs/git-pull
 
 
 ## $branch
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git branch`        |                   | List branches |
-| `git branch`        | `<branchname>`    | Create new branch |
-| `git checkout`      | `<sha-1>`         | Switch to branch, or commit |
-| `git branch`        | `-m <branchname> <newname>` | Rename branch |
-| `git merge`         | `<branchname>`    | Merge changes from `<branchname>` to current branch |
-| `git branch`        | `-d <branchname>` | `--delete` branch |
+| `git branch`        |                   | Mostra i rami |
+| `git branch`        | `<branchname>`    | Crea un nuovo ramo |
+| `git checkout`      | `<sha-1>`         | Effettua lo switch al ramo o al commit |
+| `git branch`        | `-m <branchname> <newname>` | Rinomina il ramo |
+| `git merge`         | `<branchname>`    | Effettua il Merge delle modifica da `<branchname>` al ramo corrente |
+| `git branch`        | `-d <branchname>` | `--delete` (cancella) ramo |
 
-Reference: https://git-scm.com/docs/git-branch
+Riferimenti: https://git-scm.com/docs/git-branch
 
 ## $status
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git status`  | `-s`        | Show the working tree status, with `--short` format |
-| `git log`     | `--oneline` | Show commit logs, with `--oneline` format |
-| `git ls-files`|             | Show information about files in the index and the working tree |
+| `git status`  | `-s`        | Mostra lo stato di lavoro corrente, in formato `--short` (corto) |
+| `git log`     | `--oneline` | Mostra i log dei commit, in formato `--oneline` (singola linea) |
+| `git ls-files`|             | Mostra le informazioni dei file nell'indice e nell'albero di lavoro |
 
-Reference: https://git-scm.com/docs/git-status
+Riferimenti: https://git-scm.com/docs/git-status
 
 ## $diff
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git diff`  |             | Compare **`working directory`** and **`index`** |
-|             | `–-cached`  | Compare **`index`** and **`latest commit`** |
-|             | `HEAD`      | Compare **`latest commit`** and **`working directory`** |
-|             | `--stat`    | Optional short format |
-|             | `<sha-1> <sha-1>` | 2 points in time to compare |
-|             | `<dir> | <file>` | Compare whole directory or limit to file |
+| `git diff`  |             | Confronta **`working directory`** e **`index`** |
+|             | `–-cached`  | Confronta **`index`** e **`latest commit`** (ultimo commit) |
+|             | `HEAD`      | Confronta **`latest commit`** e **`working directory`** |
+|             | `--stat`    | formato corto opzionale |
+|             | `<sha-1> <sha-1>` | 2 punti nel temp da confrontare |
+|             | `<dir> | <file>` | Confronta un'intera directory o limitati ad un file |
 
-Reference: https://git-scm.com/docs/git-diff
+Riferimenti: https://git-scm.com/docs/git-diff
 
-**Examples:**
+**Esempi:**
 
 ```shell
-## compare changes made to README.md between working tree (default) and latest commit (HEAD)
+## confronta le modifiche fatte a README.md tra l'albero di lavoro (default) e l'ultimo commit (HEAD)
 $ git diff --stat HEAD ./path/README.md
 
-## compare changes made to README.md between 2 specific points in time (e.g. 2 commits)
+## confronta le modifiche fatte a README.md tra 2 specifici punti nel tempo (es. 2 commit)
 $ git diff --stat a649900 24bdd58 ./path/README.md
 ```
 
 ## $tag
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git tag`           |                   | List tags |
-| `git tag`           | `<v1.0.0>`        | Create tag, from latest commit, lightweight |
-| `git tag`           | `-a <v1.0.0> -m "<msg>"` | Create tag, with `--annotate`, from latest commit |
-| `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Create tag, with `--annotate`, from specific commit |
-| `git tag`           | `-d  <v1.1.0>`    | `--delete` tag |
-| `git show`          | `<v1.0.0>`        | Show tag data and message |
-| `git checkout`      | `<v1.0.0>`        | Switch to specific point tag (not editable) |
-| `git push`          | `<remote> <tag>`  | Push specific tag to `<remote>` (recommended) |
-| `git push`          | `<remote> --tags` | Push all tags to `<remote>` (only if necessary) |
+| `git tag`           |                   | Mostra i tags |
+| `git tag`           | `<v1.0.0>`        | Crea un tag, dall'ultimo commit, velocemente |
+| `git tag`           | `-a <v1.0.0> -m "<msg>"` | Crea un tag, con `--annotate`, dall'ultimo commit |
+| `git tag`           | `-a <v1.0.0> -m "<msg>" <SHA-1>` | Crea un tag, con `--annotate`, da uno specifico commit |
+| `git tag`           | `-d  <v1.1.0>`    | `--delete` (canella) tag |
+| `git show`          | `<v1.0.0>`        | Mostra i dati del tag e i messaggi |
+| `git checkout`      | `<v1.0.0>`        | Effettua uno switch ad uno specifico tag (non editabile) |
+| `git push`          | `<remote> <tag>`  | Effettua il Push di uno specifico tag a `<remote>` (raccommandato) |
+| `git push`          | `<remote> --tags` | Effettua il Push di tutti i tags a `<remote>` (solo se necessario) |
 
-Reference: https://git-scm.com/docs/git-tag
+Riferimenti: https://git-scm.com/docs/git-tag
