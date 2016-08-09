@@ -108,56 +108,56 @@ Riferimenti: https://git-scm.com/docs/git-submodule
 
 | Comando | Opzioni | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git add`         | `<filename>`   |  Add files to staging area  |
-| `git commit`      | `-m "<title>" -m "<body>"`  |  Commit with message (includes "added" files only) |
-| `git rm`          | `<filenama>`   |  Remove files from the working tree and from the index |
-|                   | `-f`                |  Force deletion of files from disk |
-| `git rm` | `-r --cached <filename>`  | Untrack file (without deleting) |
+| `git add`         | `<filename>`   |  Aggiunge i files allo stage  |
+| `git commit`      | `-m "<title>" -m "<body>"`  |  Effettua un commit con messaggio (solo per i file aggiunti allo stage) |
+| `git rm`          | `<filename>`   |  Elimina i files dall'albero di lavoro e dall'indice |
+|                   | `-f`                |  Forza la cancellazione dei files dal disco |
+| `git rm` | `-r --cached <filename>`  | Effettua l'"untrack" del file (senza cancellarlo) (il file rimane su disco ma non sarà più tracciato da git) |
 
-Reference: https://git-scm.com/docs/git-commit
+Riferimenti: https://git-scm.com/docs/git-commit
 
-**Untrack hidden files, or update list of tracked files, after adding `.gitignore`:**
+**Effettua l'untrack dei file nascosti, o aggiorna la lista dei files tracciati, dopo l'aggiunta di `.gitignore`:**
 
 ```shell
-# remove all
+# rimuovi tutto
 $ git rm -r --cached .
 
-# add all again, now gitignore will take effect (try to add .gitignore from the start next time)
+# aggiunti di nuovo tutto, adesso gitignore avrà effetto (prova ad aggiungere .gitignore dall'inizio la prossima volta)
 $ git add .
 ```
 
-## $push branches (see tags for pushing tags)
+## $push branches (vedi tag per il pushing dei tags)
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git push`    | `<remotename> <branchname>`     | Push branch to remote |
-| `git push`    | `<remotename> --all`            | Push all branches to remote |
-| `git push`    | `--d <remotename> <branchname>` | `--delete` remote branch |
+| `git push`    | `<remotename> <branchname>`     | Effettua il Push di un ramo al server remoto |
+| `git push`    | `<remotename> --all`            | Effettua il Push di tutti i rami al server remoto |
+| `git push`    | `--d <remotename> <branchname>` | `--delete` cancella un ramo dal server remoto |
 
-Reference: https://git-scm.com/docs/git-push
+Referimenti: https://git-scm.com/docs/git-push
 
 ## $remote
 
-- Remote connections are like bookmarks named after remote repos
-- `git clone` automatically creates a remote connection usually called `origin`
+- Le connessioni remote sono come i segnalibri che prendono il nome di repository remoti
+- `git clone` crea automaticamente una connessione remota chiamata solitamente `origin`
 
-| Command     | Options     | Description |
+| Comando     | Opzioni     | Descrizione |
 |-------------|-------------|---------------------------------------------------------|
-| `git remote` | `-v`                         | List remote repository endpoints |
-| `git branch` | `-r`                         | List remote repository branches |
-| `git remote` | `add <name> <url>`           | Create namespaced connection to a remote repository |
-| `git remote` | `rename <oldname> <newname>` | Rename connection |
-| `git remote` | `rm <name>`                  | Remove connection |
+| `git remote` | `-v`                         | Mostra le repository remote |
+| `git branch` | `-r`                         | Mostra i rami nelle repository remote |
+| `git remote` | `add <name> <url>`           | Crea una connessione con nome ad una repository remota |
+| `git remote` | `rename <oldname> <newname>` | Rinomina la connessione |
+| `git remote` | `rm <name>`                  | Rimuovi la connessione |
 
-Reference: https://git-scm.com/docs/git-remote
+Riferimenti: https://git-scm.com/docs/git-remote
 
-**Remove remote origin:**
+**Rimuovi l'origin remoto:**
 
 ```shell
-# Remove `origin` settings from .git/config
+# Rimuovi `origin` da .git/config
 git remote rm origin
 
-# Remove `FETCH_HEAD` which still points to remote
+# Rimuovi `FETCH_HEAD` che punta ancora al remoto
 git rm .git/FETCH_HEAD
 ```
 
